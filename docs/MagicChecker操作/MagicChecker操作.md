@@ -53,9 +53,9 @@
 1. 地址：[serverpilot](https://serverpilot.io/)
 2. 新注册账号可免费试用 **14天**
 ### 1-2. 绑定Paypal或者信用卡
-2. 绑定paypal或者信用卡
+1. 绑定paypal或者信用卡 <Badge type="danger" text="必须绑定" vertical="middle" />
 ::: tip 为什么需要绑定paypal ?
-用来自定义app名称和使用SSL
+自定义 **app名称** 和使用 **Auto SSL**
 :::
 
 ![]()
@@ -182,4 +182,3 @@
 ## 8. QAQ
 ### 需要注意的问题
 1. 每次修改MagicChecker之后，都需要替换index.php文件
-2. 
