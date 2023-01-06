@@ -1,0 +1,1 @@
+import{_ as t,V as a,W as s,X as e,Y as o}from"./framework-89519612.js";const r={},c=e("h1",{id:"关于我",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#关于我","aria-hidden":"true"},"#"),o(" 关于我")],-1),n=e("p",null,"vuepress文档 - erkang",-1),_=[c,n];function d(i,l){return a(),s("div",null,_)}const u=t(r,[["render",d],["__file","about.html.vue"]]);export{u as default};
