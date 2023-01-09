@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-22a39d25","path":"/about.html","title":"关于本站","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"createdTime":1673057484000,"updatedTime":1673057484000,"contributors":[{"name":"erkang1","email":"1706381769@qq.com","commits":1}]},"readingTime":{"minutes":0.03,"words":8},"filePathRelative":"about.md","localizedDate":"2023年1月7日"}');export{e as data};
