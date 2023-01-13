@@ -161,6 +161,5 @@
 
 ## 7. 访问你的域名即可
 
-## 8. QAQ
-### 需要注意的问题
-1. 每次修改MagicChecker之后，都需要替换index.php文件
+## 8. FAQ
+#### 1. 每次修改MagicChecker之后，都需要替换index.php文件

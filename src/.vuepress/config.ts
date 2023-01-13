@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
+  lang: "zh-CN",
   base: '/vuePress/',
   dest: './dist',
   title: "erkang - Demo文档",
@@ -9,12 +10,13 @@ export default defineUserConfig({
   head: [
     [
       // favicon.ico
-      'link', { rel: 'icon', href: '/vuePress/assets/img/logo.jpg' }
+      'link', { rel: 'icon', href: '/vuePress/assets/img/logo.jpg' },
     ]],
-  
+
   theme: hopeTheme({
     logo: '/assets/img/logo.jpg',
-    iconAssets: "iconfont",
+    // iconAssets: "//at.alicdn.com/t/c/font_3854936_ujp6mtnx13c.css",
+    iconAssets:"fontawesome",
     navbar: [
       {
         text: "主页",
@@ -23,26 +25,26 @@ export default defineUserConfig({
       },
       {
         text: "软件使用指南",
-        icon: "workingDirectory",
+        icon: "paperclip",
         children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md"],
       },
     ],
 
     sidebar: [
       {
-        text: "关于我",
+        text: "关于本站",
         link: "/about.md",
-        icon: "people"
+        icon: "user"
       },
       {
         text: "主流代理软件配置指南",
         link: "/demo/代理软件操作.md",
-        icon: "launch"
+        icon: "rocket"
       },
       {
         text: "MagicChecker使用指南",
         link: "/demo/MagicChecker操作.md",
-        icon: "process"
+        icon: "wand-magic-sparkles"
       },
     ],
 
@@ -57,6 +59,7 @@ export default defineUserConfig({
         // 启用图片大小
         imgSize: true,
       },
+      
     },
   repo: "https://github.com/erkang1/vuePress",
   repoLabel: "GitHub",
