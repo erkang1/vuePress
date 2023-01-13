@@ -4,6 +4,11 @@
 1. 地址：[MagicChecker](https://clients.magicchecker.com/)
 
 ## 0. 准备工作
+### 0-0. 账号相关
+1. 准备正常接码的邮箱，用于注册平台账号
+
+2. 准备 **余额超过5美金** 的PayPal账号，用于绑定 serverpilot 服务
+
 ### 0-1. 准备需要的源文件
 1. 准备A站（**safe 伪装页**），B站（**promo 落地页**）的源文件
 ::: tip 文件说明
