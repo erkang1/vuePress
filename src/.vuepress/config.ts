@@ -61,7 +61,7 @@ export default defineUserConfig({
       },
       
     },
-  repo: "https://github.com/erkang1/vuePress",
+  repo: "https://github.com/erkang1/vuePress/tree/vusthemehope",
   repoLabel: "GitHub",
   repoDisplay: true,
   }),
