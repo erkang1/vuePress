@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
+import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -7,6 +8,11 @@ export default defineUserConfig({
   dest: './dist',
   title: "erkang - Demo文档",
   description: "erkang - Demo文档",
+  plugins: [
+    autoCatalogPlugin({
+      exclude: ["/demo/"],
+    }),
+  ],
   head: [
     [
       // favicon.ico
@@ -16,7 +22,7 @@ export default defineUserConfig({
   theme: hopeTheme({
     logo: '/assets/img/logo.jpg',
     // iconAssets: "//at.alicdn.com/t/c/font_3854936_ujp6mtnx13c.css",
-    iconAssets:"fontawesome",
+    iconAssets: "fontawesome",
     navbar: [
       {
         text: "主页",
@@ -27,7 +33,7 @@ export default defineUserConfig({
         text: "软件使用指南",
         icon: "paperclip",
         children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md"],
-      },
+      }
     ],
 
     sidebar: [
@@ -45,9 +51,8 @@ export default defineUserConfig({
         text: "MagicChecker使用指南",
         link: "/demo/MagicChecker操作.md",
         icon: "wand-magic-sparkles"
-      },
+      }
     ],
-
     plugins: {
       mdEnhance: {
         // 启用 figure
@@ -59,11 +64,16 @@ export default defineUserConfig({
         // 启用图片大小
         imgSize: true,
       },
-      
+      components: {
+        // 你想使用的组件
+        components: [
+          "VideoPlayer",
+        ],
+      },
     },
-  repo: "https://github.com/erkang1/vuePress/tree/vusthemehope",
-  repoLabel: "GitHub",
-  repoDisplay: true,
+    repo: "https://github.com/erkang1/vuePress/tree/vusthemehope",
+    repoLabel: "GitHub",
+    repoDisplay: true,
   }),
   shouldPrefetch: true,
 });

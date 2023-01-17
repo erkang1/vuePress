@@ -1,20 +1,20 @@
 #  MagicChecker配置
 
-0. 说明:新注册账号可免费试用 **7天**
+0. 说明：新注册账号并验证可免费试用 **7天**
 1. 地址：[MagicChecker](https://clients.magicchecker.com/)
 
 ## 0. 准备工作
 ### 0-0. 账号相关
 1. 准备正常接码的邮箱，用于注册平台账号
 
-2. 准备 **余额超过5美金** 的PayPal账号，用于绑定 serverpilot 服务
+2. 准备 **余额超过5美金** 的PayPal账号或信用卡，用于绑定 serverpilot 服务
 
 ### 0-1. 准备需要的源文件
-1. 准备A站（**safe 伪装页**），B站（**promo 落地页**）的源文件
+1. 准备A站（**safe 伪装页**），B站（**promo 落地页**）的 **源文件**
 ::: tip 文件说明
 文件为**纯静态Html**类型
 ::: danger 官方警告
-不推荐使用跳转链接配置，可能会导致域名链接被风控的问题
+不推荐使用跳转链接配置，可能会导致域名触发风控
 
 :::
 
@@ -28,9 +28,10 @@
 
 ### 0-3. 购买服务器 
 1. 地址：[vultr](https://www.vultr.com/?ref=8934457) (根据自己习惯选择购买服务器地址)
-::: tip 文件说明
+::: tip 系统说明
 服务器的系统需要选择 **Ubuntu 18.04 LTS x64**
 :::
+
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/ubuntu1804.png')">
 
@@ -49,7 +50,7 @@
 <img class="personalPic" :src="('/vuePress/assets/img/bdpaypal.png')">
 
 ### 1-3. 绑定服务器并安装服务
-1. 输入服务器**账号密码**，等待进度条完成即可
+1. 输入服务器**账号密码**，点击 **Connect to ServerPilot** ,等待进度条完成即可
 
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/conse.png')">
@@ -71,7 +72,7 @@
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/shuru.png')">
 
-3. 将得到的System NS Records值填写到购买域名的网站处解析出来
+3. 将上一步骤得到的System NS Records值填写到 **购买域名的网站处** 解析出来
 
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/jx1.png')">
@@ -82,7 +83,7 @@
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/jx3.png')">
 
-4. 回到 dnsmadeeasy 添加服务器
+4. 回到 DNS Made Easy ,点击 **+** 添加服务器
 
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/bangdi.png')">
@@ -135,11 +136,21 @@
 2. 进入 常规设置 ，将显示的页面类型选择为 文件（Show content）,设置文件路径，例如我的路径：**`http://www.你的域名地址/srv/users/你的APP名称/apps/你的域名地址/public`**
 
 3. 将文件按照地址栏的提示进行填写 **safe.html | promo.html**
+::: tip 示例
+ 
+ 我的Safe Page 配置：
+ 
+ `http://www.0121212.xyz/srv/users/gm1212/apps/0121212/public/safe.html`
+
+ 我的Promo Page 配置：
+ 
+ `http://www.0121212.xyz/srv/users/gm1212/apps/0121212/public/Promo.html`
+:::
 
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/dzpz.png')">
 
-### 6-3. 安装MFS
+### 6-3. 安装MFS (新开一个浏览器页面安装)
 1. 地址：[MFS](https://clients.magicchecker.com/user/mfs)
 2. 按照要求输入服务器和域名信息
 
@@ -162,9 +173,14 @@
 ![]()
 <img class="personalPic" :src="('/vuePress/assets/img/th.png')">
 
-至此，所以的配置都已完毕
+**至此，配置完毕**
 
 ## 7. 访问你的域名即可
 
 ## 8. FAQ
-#### 1. 每次修改MagicChecker之后，都需要替换index.php文件
+### 1. 为什么Vutrl购买服务器之后，我的服务器无法连接？
+ > 答：服务器安装需要时间，时间为10分钟到30分钟不等，请耐心等待！
+### 2. 为什么配置完DNS之后，whatsmydns检测显示不是我的IP？
+ > 答：DNS刷新时间为30分钟左右，请耐心等待！
+### 3. 为什么我重新上传了内容，但是网站内容没有同步？
+ > 答：每次修改MagicChecker内容之后，都需要重新上传并替换 **index.php** 文件
