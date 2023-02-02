@@ -32,8 +32,8 @@ export default defineUserConfig({
       {
         text: "软件使用指南",
         icon: "paperclip",
-        children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md"],
-      }
+        children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md","/demo/脚本.md"],
+      },
     ],
 
     sidebar: [
@@ -51,6 +51,11 @@ export default defineUserConfig({
         text: "MagicChecker使用指南",
         link: "/demo/MagicChecker操作.md",
         icon: "wand-magic-sparkles"
+      },
+      {
+        text: "脚本",
+        link: "/demo/脚本.md",
+        icon: "hippo"
       }
     ],
     plugins: {
