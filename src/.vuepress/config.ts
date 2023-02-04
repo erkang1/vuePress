@@ -22,7 +22,8 @@ export default defineUserConfig({
   theme: hopeTheme({
     logo: '/assets/img/logo.jpg',
     // iconAssets: "//at.alicdn.com/t/c/font_3854936_ujp6mtnx13c.css",
-    iconAssets: "fontawesome",
+    // iconAssets: "fontawesome",
+    iconAssets: "iconfont",
     navbar: [
       {
         text: "主页",
@@ -31,7 +32,7 @@ export default defineUserConfig({
       },
       {
         text: "软件使用指南",
-        icon: "paperclip",
+        icon: "workingDirectory",
         children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md","/demo/脚本.md"],
       },
     ],
@@ -40,22 +41,22 @@ export default defineUserConfig({
       {
         text: "关于本站",
         link: "/about.md",
-        icon: "user"
+        icon: "people"
       },
       {
         text: "主流代理软件配置指南",
         link: "/demo/代理软件操作.md",
-        icon: "rocket"
+        icon: "launch"
       },
       {
         text: "MagicChecker使用指南",
         link: "/demo/MagicChecker操作.md",
-        icon: "wand-magic-sparkles"
+        icon: "linter"
       },
       {
         text: "脚本",
         link: "/demo/脚本.md",
-        icon: "hippo"
+        icon: "interact"
       }
     ],
     plugins: {
