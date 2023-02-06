@@ -69,6 +69,8 @@ export default defineUserConfig({
         imgMark: true,
         // 启用图片大小
         imgSize: true,
+        //启用标记
+        mark: true,
       },
       components: {
         // 你想使用的组件
