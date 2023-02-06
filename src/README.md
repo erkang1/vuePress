@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: assets/img/logo.jpg
+heroImage: https://github.githubassets.com/images/mona-whisper.gif
 heroText: 使用指南
 tagline: 目前文档正在逐渐完善中...
 features:
