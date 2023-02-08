@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import { hopeTheme } from "vuepress-theme-hope";
-import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -9,8 +9,13 @@ export default defineUserConfig({
   title: "erkang - Demo文档",
   description: "erkang - Demo文档",
   plugins: [
-    autoCatalogPlugin({
-      exclude: ["/demo/"],
+    searchPlugin({
+      // 你的选项
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+      }
     }),
   ],
   head: [
@@ -54,7 +59,7 @@ export default defineUserConfig({
         icon: "linter"
       },
       {
-        text: "脚本",
+        text: "Fb脚本配置指南",
         link: "/demo/脚本.md",
         icon: "interact"
       }
