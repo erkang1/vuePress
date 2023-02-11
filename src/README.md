@@ -4,13 +4,13 @@ heroImage: https://github.githubassets.com/images/mona-whisper.gif
 heroText: 使用指南
 tagline: 目前文档正在逐渐完善中...
 features:
-  - title: MagicChecker操作指南
+  - title: 🪄 MagicChecker操作指南
     icon: linter
     details: MagicChecker官方配置操作指南
     link: /demo/MagicChecker操作.md
-  - title: 简洁至上 💡
+  - title: 💡 简洁至上 
     details: 以 Markdown 为中心的项目结构.
-  - title: 主流代理软件配置指南
+  - title: ✈️ 主流代理软件配置指南
     icon: launch
     details: 主流代理软件操作 - CLash for windows / Shadowrockets
     link: /demo/代理软件操作.md

@@ -1,4 +1,17 @@
 // place your custom styles here
 :root {
     --search-input-width: 10rem !important;
+
+    .notice-wrapper{
+        width: 330px !important;
+    }
+
+    .notice-footer-action{
+        margin-right: 30px !important;
+        width: 100px !important;
+    }
+    
+    .notice-footer-action .primary{
+        width: 100px !important;
+    }
 }
