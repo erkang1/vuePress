@@ -14,6 +14,7 @@ export default defineUserConfig({
     searchProPlugin({
       indexContent: true,
     }),
+    // 公告栏配置 会导致 icon 失效 ，目前未定位到问题 ?
     // componentsPlugin({
     //   rootComponents: {
     //     notice: [
@@ -60,8 +61,13 @@ export default defineUserConfig({
         icon: "workingDirectory",
         children: ["/demo/代理软件操作.md", "/demo/MagicChecker操作.md","/demo/脚本.md"],
       },
+      {
+        text: "我的博客主页",
+        link: "https://erkang1.github.io/VuepressBlog/",
+        icon: "template"
+      },
     ],
-
+   
     sidebar: [
       {
         text: "关于本站",

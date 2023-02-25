@@ -68,6 +68,14 @@ category:
 2. 完成账号验证和实名验证
 3. 新注册账号可免费试用 **30天**
 
+::: tip 扩展
+**dnsmadeeasy** 是 magicChecker 官方推荐的托管网站 
+
+也可使用 [cloudflare](https://dash.cloudflare.com/) ，这是一个免费托管网站，注册账号即可使用
+
+cloudflare 使用操作不做说明
+:::
+
 ### 2-2. 解析域名
 1. 点击添加域名      
 
