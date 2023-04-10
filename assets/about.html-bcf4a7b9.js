@@ -1,0 +1,1 @@
+import{_ as t,X as a,Y as s,Z as e,$ as o}from"./framework-ac1910cc.js";const r={},c=e("h1",{id:"关于本站",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#关于本站","aria-hidden":"true"},"#"),o(" 关于本站")],-1),n=e("p",null,"vuepress文档 - erkang",-1),_=[c,n];function d(i,l){return a(),s("div",null,_)}const u=t(r,[["render",d],["__file","about.html.vue"]]);export{u as default};
